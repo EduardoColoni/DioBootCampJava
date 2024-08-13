@@ -1,21 +1,21 @@
 package com.contabanco.model;
 
 public class Usuario {
-    private int numero;
+    private String cpf;
     private String nomeAgencia;
     private String nomeCliente;
-    private double saldo;
+    private float saldo;
 
-    public Usuario(String nomeCliente, String nomeAgencia, int numero, double saldo) {
+    public Usuario(String nomeCliente, String nomeAgencia, String cpf, float saldo) {
         this.nomeCliente = nomeCliente;
         this.nomeAgencia = nomeAgencia;
-        this.numero = numero;
+        this.cpf = cpf;
         this.saldo = saldo;
     }
 
     // Métodos getters
-    public int getNumero() {
-        return numero;
+    public String getCpf() {
+        return cpf;
     }
 
     public String getNomeAgencia() {
@@ -26,7 +26,7 @@ public class Usuario {
         return nomeCliente;
     }
 
-    public double getSaldo() {
+    public float getSaldo() {
         return saldo;
     }
 }
